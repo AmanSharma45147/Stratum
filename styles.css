@@ -1,0 +1,97 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    overflow: hidden; /* Prevents full page scroll */
+}
+
+/* Section styles */
+.index-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-section {
+    display: flex;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 0 50px;
+    opacity: 0; /* Hidden by default, shown by JavaScript */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap; /* Ensures heading stays on one line */
+}
+
+.tagline {
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Left section layout adjustments */
+.left-section {
+    max-width: 50%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between elements */
+}
+
+/* Button styles */
+.btn-green {
+    background-color: #43b581;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-green:hover {
+    background-color: #35a16f;
+}
+
+/* Fixed image styling */
+.fixed-image {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%); /* Centers image vertically */
+    max-width: 500px; /* Limits the width of the image */
+}
+
+.fixed-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer centered social icons */
+footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}

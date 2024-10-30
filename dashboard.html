@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stratum Dashboard</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Stratum</div>
+        <div class="top-right">
+            <button id="connect-wallet">Connect Wallet</button>
+            <div class="wallet-balance">
+                <span>Balance:</span>
+                <span id="balance">0.00</span>
+            </div>
+            <button id="settings">Settings</button>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="activity-log">
+            <h3>Activity Log</h3>
+            <ul id="activity-list">
+                <li>No mined crypto yet</li>
+            </ul>
+        </div>
+
+        <div class="crypto-counter">
+            <h2>Crypto Mined</h2>
+            <div class="counter" id="crypto-mined">000000000000</div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="center-bottom">
+            <button class="mine-btn" id="mine-btn" disabled>Mine</button>
+            <button class="claim-btn" id="claim-btn">Claim</button>
+        </div>
+    </footer>
+
+    <!-- Include wallet.js and script.js -->
+    <script type="module" src="wallet.mjs"></script>
+    <script src="script.js"></script>
+</body>
+</html>

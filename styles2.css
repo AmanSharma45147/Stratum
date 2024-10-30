@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #2c2f33;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #43b581;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+}
+
+.wallet-balance {
+    margin-left: 20px;
+}
+
+.wallet-balance span {
+    font-size: 16px;
+    color: white;
+}
+
+#connect-wallet, #settings {
+    padding: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+    background-color: #7289da;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#connect-wallet:hover, #settings:hover {
+    background-color: #5b6ea5;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+/* Crypto Counter */
+.crypto-counter {
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+.crypto-counter h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.counter {
+    font-size: 48px;
+    background-color: #2c2f33;
+    padding: 30px;
+    border-radius: 10px;
+    letter-spacing: 5px;
+    color: #43b581;
+}
+
+/* Activity Log */
+.activity-log {
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    background-color: #23272a;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.activity-log h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.activity-log ul {
+    list-style-type: none;
+}
+
+.activity-log li {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Footer Buttons */
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mine-btn, .claim-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: white;
+}
+
+.mine-btn {
+    background-color: #43b581;
+}
+
+.mine-btn:hover {
+    background-color: #35a16f;
+}
+
+.claim-btn {
+    background-color: gray;
+}
+
+.claim-btn:hover {
+    background-color: #505050;
+}
+
+/* Scroll Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.crypto-counter, .mine-btn, .claim-btn, .activity-log {
+    animation: fadeIn 2s ease;
+}
